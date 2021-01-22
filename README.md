@@ -7,4 +7,5 @@ Langages utilisés:
 - JavaScript ( légère introduction de ce langage pas encore appris )
 
 Utilisation des Flex Box
+
 Mise en place du Responsive ( 1024, 768, 600 )
