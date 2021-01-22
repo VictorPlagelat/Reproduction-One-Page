@@ -6,6 +6,8 @@ Langages utilisés:
 - CSS
 - JavaScript ( légère introduction de ce langage pas encore appris )
 
+Maquettage sur le logiciel JustInMind
+
 Utilisation des Flex Box
 
 Mise en place du Responsive ( 1024, 768, 600 )
