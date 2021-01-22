@@ -1,0 +1,575 @@
+/* =================================================================================================
+       GENERAL 
+ =================================================================================================*/
+
+*{ 
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    -webkit-box-shadow: -10px -10px 15px 2px #9C9C9C;
+    box-shadow: -10px -10px 15px 2px #9C9C9C;
+    width: 100%;
+    
+    padding: 0;
+    background-color: white;  
+}
+img{
+    width: 100%;
+}
+
+/* =================================================================================================
+       HEADER
+ =================================================================================================*/
+
+    /* ----- BURGER ----- */
+    
+header nav .burger{
+    order: 3;
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: hsla(0, 0%, 98%, 0.63);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+header nav .burger span{
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 7px;
+    z-index: 11;
+    background-color: hsl(0, 0%, 11%);
+    border-radius: 3px;
+}
+
+    /*------ FIN BURGER ------ */
+
+header{ 
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+header nav{
+    padding: 2em 0;
+    margin: auto;
+    width: 1200px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px rgba(255, 255, 255, 0.431) solid;
+}
+header nav .logo{
+    display: block;
+    margin: 1em 0em;
+    width: 200px;
+
+}
+header nav div{
+    width: 600px;
+    display: flex;   
+    justify-content: space-between;  
+}
+
+header nav .navlink{ 
+    font-size: 15px;
+    width: 15%;
+    color: hsl(0, 0%, 67%);
+    text-decoration: none;
+    transition: 0.3s ease;
+} 
+header nav .navlink:hover{
+    color: white;
+}
+
+.txtheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding: 10% 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    
+}
+.txtheader h1{
+    font-weight: 700;
+    font-size: 80px;
+    width: 100%;
+}
+.txtheader p{
+    width: 90%;
+    font-size: 30px;   
+}
+.txtheader .btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    width: 160px;
+    background-color: hsla(0, 78%, 54%, 0.685);
+    color: white;
+    margin: 5em 0;
+    height: 50px;
+    transition: ease 0.3s;
+}
+.txtheader .btn:hover{
+    background-color: #E52E2E;
+}
+
+/* =================================================================================================
+       SECTION 1 (icone )
+ =================================================================================================*/
+
+.icone{  
+    margin: auto;
+    padding: 10em; 
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: space-around;
+}
+.icone article{
+    text-align: center;
+    width: 350px;
+    margin: 2em 3em;
+}
+.far, .fas{
+    font-size: 70px;
+    color: #DA7E7C;
+}
+.icone h2{
+    width: 100%;
+    font-size: 25px;
+
+}
+.icone p{
+    font-size: 20px;
+}
+
+/* =================================================================================================
+       SECTION 2 (LIGHTBOX)
+ =================================================================================================*/
+
+.lightbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+    .lightbox figure{
+        margin: 0;
+        padding: 0;
+        border: 1px white solid;
+        width: 25%;
+        overflow: hidden; 
+        position: relative;
+        cursor: pointer;
+        }
+        .lightbox figure figcaption{
+            font-size: 15px;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;  
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity ease-in-out 0.3s;
+            color: #ffffff;
+            background-color:hsla(0, 78%, 54%, 0.582) ;
+            opacity: 0;
+        }
+        .lightbox figure:hover figcaption{
+            opacity: 1;
+        }
+        .lightbox figure h3{
+            font-size: 15px;
+            transform: translatey(-150%);
+            transition: all 0.5s;
+        }
+        .lightbox figure p{
+            transform: translateY(150%);
+            transition: all 0.5s;
+        }
+        .lightbox figure:hover h3{
+            transform: translateY(0);
+        }
+        .lightbox figure:hover p{
+            transform: translateY(0);
+        }
+        .lightbox figure:hover img{
+            transform: scale(1.2);
+            transition: all 0.3s;
+        }
+
+/* =================================================================================================
+       SECTION 3 (PROFILE) 
+ =================================================================================================*/
+
+.profile{
+    margin: 2em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+article{
+    margin: 5em 1em;
+    width: 15%;
+}
+.profile h2{
+    font-size: 20px;
+}
+.profile h3{
+    font-size: 12px;
+    color: red;
+}
+.profile p{
+    width: 100%;
+    font-size: 14px;
+    color: rgb(139, 138, 138);
+}
+.profile article .fab{
+    font-size: 30px; 
+}
+.profile article div{
+    display: flex; 
+}
+.profile article div a{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border: 1px solid hsl(0, 0%, 74%);
+    align-items: center;
+    justify-content: space-around;
+    color: hsl(0, 0%, 74%);
+    text-decoration: none;
+    transition:0.3s ease;
+}
+.profile article div a:nth-child(2){
+    margin: 0 0.5em;
+}
+.profile article div a:hover{
+    background-color: #E52E2E ;
+    color: white;
+    border: #E52E2E ;
+}
+
+/* =================================================================================================
+       SECTION 4 (CAROUSEL) 
+ =================================================================================================*/
+
+.carousel-inner .active figure{
+    width: 50%;  
+}
+.carousel-inner .active img{
+    width: 100%;
+}
+ol{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel-inner .active{
+    display: flex; 
+    background-color: #53354A;
+    color: white;
+    font: italic 36px "cardo", Georgia, "Times New Roman", serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.Textecarousel{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+}
+.Textecarousel h4{
+    padding-top: 2em;
+}
+
+/* =================================================================================================
+       SECTION 5 ( WHITE ) 
+ =================================================================================================*/
+
+.white{
+    margin: 3em 0;
+    text-align: center;
+}
+.white .btn{
+
+    font-size: 15px;
+    width: 250px;
+    background-color: hsla(0, 78%, 54%, 0.685);
+    color: white;
+    height: 35px;
+    transition: ease 0.3s;
+}
+.white .btn:hover{
+    background: #E52E2E;
+}
+
+/* =================================================================================================
+       SECTION 6 ( BLUE ) 
+ =================================================================================================*/
+
+.blue{
+    height: 300px;
+    color: white;
+    background: #3A3E63;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;   
+}
+.blue h4{
+    font-size: 15px;
+    padding-bottom: 1em;
+}
+.blue p{
+    color: #ffffff91;
+    margin: 0;
+}
+.blue article:nth-child(1){
+    margin: 0 17%;
+    width: 8%;   
+}
+.blue .social{
+    width: 20%; 
+}
+.blue .social .fab{
+    font-size: 30px;
+}
+.blue .social{
+    margin: auto;
+}
+.blue .social div{
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+}
+.blue .social div a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+.blue .social div a:hover{
+    background-color:#E52E2E ;
+    border: #E52E2E;
+}
+.blue .social div a:nth-child(2){
+    margin: 0 0.5em;
+}
+.blue article:last-of-type{
+    width: 20%;
+    margin: 0 10%;
+}
+
+/* =================================================================================================
+       FOOTER 
+ =================================================================================================*/
+
+footer{
+    background: #313455;
+    color: rgba(255, 255, 255, 0.431);
+    text-align: center;
+}
+footer .fas{
+    font-size: 10px;
+}
+
+/* =================================================================================================
+================================================================================================= */
+
+/* =================================================================================================
+       RESPONSIVE ( TABLETTE )
+ =================================================================================================*/
+
+ @media screen and (max-width: 1024px) {
+
+/*======================   HEADER  ============================================== */
+
+    header nav{
+        width: 100%;
+    }
+    .txtheader{
+        width: 900px;
+        align-items: center;
+        padding: 5em 0;
+    } 
+
+ /* burger position*/
+
+    header nav{
+        position: relative;
+    }
+    header nav .burger{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translatey(-50%);
+        z-index: 20;
+    }
+   
+/* ////// CLASSE VISIBLE POUR NAV RESPONSIVE */
+
+    header nav .link{
+        opacity: 0;
+        z-index: -10;   
+    }
+    header nav div{
+        width: 15%;
+    }
+    header nav .visible{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 15;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.65);
+        opacity: 1;
+    }
+    header nav .visible .navlink{
+        width: 50%;
+        font-size: 30px;
+        color: white;
+    }
+
+/* //////  FIN CLASSE VISIBLE */
+
+    .txtheader{
+        width: 650px;
+    }
+
+/*======================   SECTION 2 (LIGHTBOX)   ============================================== */
+
+    .lightbox figure{
+        width: 50%;
+    }
+
+/*======================   SECTION 3 (PROFILE)  ============================================== */
+
+    .profile article{
+        width: 40%;
+    }
+
+/*======================   SECTION 4 (CAROUSEL)  ============================================== */
+
+    .carousel-inner .active figure{
+        width: 100%;
+    }
+    .carousel-inner .active .Textecarousel{
+        width: 100%;
+    }
+    .carousel-inner .active{
+        flex-direction: column;
+        width: 100%;
+    }
+    ol{
+        justify-content: center;
+    }
+
+/*======================   SECTION 5 (WHITE)  ============================================== */
+
+    .white .btn{
+        font-size: 15px;
+    }
+
+/*======================   SECTION 6 (BLUE)  ============================================== */
+
+    .blue{
+        flex-direction: column;
+        height: auto;
+    }
+    .blue .social{
+        margin: 1em; 
+        width: 100%;
+    }
+    .blue article:nth-child(1), .blue article:last-of-type{
+        width: 100%;
+        padding: 2em 0;
+    }
+}
+
+/* =================================================================================================
+       RESPONSIVE ( TELEPHONE )
+ =================================================================================================*/
+
+@media screen and (max-width: 768px) {
+
+/*======================   HEADER  ============================================== */
+
+    header{
+        height: auto;
+    }
+    .txtheader{
+    width: 500px;
+    }
+    
+/*======================   SECTION 2 (LIGHTBOX)  ============================================== */
+
+    .lightbox figure{
+        width: 100%;
+        }
+
+/*======================   SECTION 3 (PROFILE)  ============================================== */
+
+    .profile article{
+        width: 100%;
+        text-align: center;
+        }
+    .profile img{
+        width: 350px;
+        display: block;
+        margin: auto;
+    }
+    .profile p{
+        margin: auto;
+        width: 300px;      
+    }
+    .profile article div{
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+/*======================   SECTION 5 (WHITE)  ============================================== */
+
+    .white .btn{
+        font-size: 15px;
+    }
+}
+
+@media screen and ( max-width: 600px) {
+
+/*======================   HEADER  ============================================== */
+
+        .txtheader{
+            width: 430px;
+        }
+}
