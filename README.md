@@ -4,7 +4,7 @@ Reproduction d'un site " Active Box " dans le cadre de ma formation chez Elan Fo
 Langages utilisés:
 - HTML
 - CSS
-- JavaScript ( légère introduction de ce langage pas encore appris )
+- JavaScript (légère introduction de ce langage pas encore appris)
 
 Maquettage sur le logiciel JustInMind
 
